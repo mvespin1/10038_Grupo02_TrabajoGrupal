@@ -1344,33 +1344,10 @@ document.getElementById("demoJson12").innerHTML = text12;</code></pre>
                   </div>
 
                   <!--EJEMPLO XMLHttpRequest-->
-                  <div class="w3-container" id="modal">
-                    <button
-                        onclick="document.getElementById('id01').style.display='block';"
-                        class="w3-button w3-green w3-large">Ejecutar</button>
-                    <div id="id01" class="w3-modal">
-                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style=" max-width:600px">
-                          <br> <br>
-                          <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
-function loadDoc() {
-const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-document.getElementById("demo").innerHTML = this.responseText;
-}
-xhttp.open("GET", "ajax.txt");
-xhttp.send();
-}</code></pre>
-                          </div>
-                            <div class="w3-center"><br>
-                                <span onclick="document.getElementById('id01').style.display='none'"
-                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                                    title="Close Modal">&times;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                  <div id="demo">
+                    <h2>The XMLHttpRequest Object</h2>
+                    <button type="button" onclick="loadDoc()">Change Content</button>
+                  </div>        
                 </div>
               </div>
             </div>
