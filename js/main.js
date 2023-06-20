@@ -2,7 +2,7 @@ $('.carousel').carousel({
 	interval: 3000,
 	pause: "hover"
 })
-//PARTE DE XML
+//PARTE DE XML jordan
 //--------------------------------------------------------------------
     // Función para insertar el código y ejecutarlo dentro del div
     function insertCode() {
