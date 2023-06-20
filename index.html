@@ -280,54 +280,44 @@
           </div>
         </div>
 
+        <!-- MARCO -->
+
         <div class="tab-pane fade" id="json">
           <br>
           <div class="row">
             <div class="col-md-9 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
-              <img src="./img/json.png" align="center" class="img-responsive"
-                style="width: 50%; height: 60%; display: block; margin-left: auto; margin-right: auto;">
+              <img src="./img/json.png" align="center" class="img-responsive" style="width: 50%; height: 60%; display: block; margin-left: auto; margin-right: auto;">
               <br>
               <div class="panel panel-primary" id="json1">
                 <div class="panel-heading">Introducción a JSON</div>
                 <div class="panel-body">
                   <b>¿Qué es JSON?</b> <br><br>
-                  <p>JSON (JavaScript Object Notation) o "Notación de Objetos de JavaScript" por su traducción al
-                    español consiste en un formato de intercambio de datos ligero y legible por humanos, que es
-                    utilizado para almacenar una colección de pares nombre-valor o una lista ordenada de valores.</p>
-
+                  <p>JSON (JavaScript Object Notation) o "Notación de Objetos de JavaScript" por su traducción al español consiste en un formato de intercambio de datos ligero y legible por humanos, que es utilizado para almacenar una colección de pares nombre-valor o una lista ordenada de valores.</p>
+                  
                   <br><b>Principales Características de JSON</b> <br><br>
                   <ul>
-                    <li>JSON es completamente independiente del lenguaje, es decir que puede ser utilizado por una
-                      amplia variedad de lenguajes como JavaScript, Python, Java, C#, entre otros.</li>
+                    <li>JSON es completamente independiente del lenguaje, es decir que puede ser utilizado por una amplia variedad de lenguajes como JavaScript, Python, Java, C#, entre otros.</li>
                     <li>JSON es utilizado para enviar datos entre computadoras</li>
-                    <li>JSON admite una variedad de tipos de datos, incluyendo cadenas de texto, números, booleanos,
-                      null, objetos y arreglos.</li>
+                    <li>JSON admite una variedad de tipos de datos, incluyendo cadenas de texto, números, booleanos, null, objetos y arreglos.</li>
                     <li>JSON puede ser interpretado y generado por diferentes plataformas y sistemas operativos.</li>
                   </ul>
 
                   <br><b>¿Por qué es importante JSON?</b> <br><br>
                   <p>Entre las principales ventajas del uso de JSON, se tiene:</p>
                   <ul>
-                    <li>Al ser un formato de texto plano, los datos JSON se pueden enviar y recibir fácilmente entre
-                      diferentes computadoras y sistemas.</li>
-                    <li>El formato JSON es fácil de leer y entender tanto para los desarrolladores como para los
-                      sistemas.</li>
-                    <li>Debido a que el formato JSON se asemeja a la sintaxis para crear objetos en JavaScript, los
-                      datos JSON se pueden convertir fácilmente en objetos JavaScript.</li>
-                    <li>JSON es ampliamente utilizado en el desarrollo web y en servicios web API. Debido a su
-                      simplicidad y facilidad de uso, se ha convertido en un estándar de facto en la transmisión y
-                      almacenamiento de datos estructurados en aplicaciones web.</li>
-                    <li>JavaScript proporciona funciones integradas para convertir datos JSON en objetos JavaScript
-                      "JSON.parse()" y para convertir objetos JavaScript en cadenas JSON "JSON.stringify()". </li>
+                    <li>Al ser un formato de texto plano, los datos JSON se pueden enviar y recibir fácilmente entre diferentes computadoras y sistemas.</li>
+                    <li>El formato JSON es fácil de leer y entender tanto para los desarrolladores como para los sistemas.</li>
+                    <li>Debido a que el formato JSON se asemeja a la sintaxis para crear objetos en JavaScript, los datos JSON se pueden convertir fácilmente en objetos JavaScript.</li>
+                    <li>JSON es ampliamente utilizado en el desarrollo web y en servicios web API. Debido a su simplicidad y facilidad de uso, se ha convertido en un estándar de facto en la transmisión y almacenamiento de datos estructurados en aplicaciones web.</li>
+                    <li>JavaScript proporciona funciones integradas para convertir datos JSON en objetos JavaScript "JSON.parse()" y para convertir objetos JavaScript en cadenas JSON "JSON.stringify()". </li>
                   </ul>
 
                 </div>
-              </div>
+              </div> 
               <div class="panel panel-primary" id="json2">
                 <div class="panel-heading">Sintaxis de JSON</div>
                 <div class="panel-body">
-                  <p>JSON utiliza una sintaxis similar a la notación de objetos en JavaScript. Esta cuenta con los
-                    siguientes aspectos:</p>
+                  <p>JSON utiliza una sintaxis similar a la notación de objetos en JavaScript. Esta cuenta con los siguientes aspectos:</p>
                   <ul>
                     <li>Está compuesto por pares <b>"clave-valor"</b> y listas de valores.</li>
                     <li>Los datos se encuentran separados por comas.</li>
@@ -338,16 +328,14 @@
                   <br>
 
                   <h4><b>SINTAXIS:</b></h4>
-                  <p>Los datos JSON se escriben como pares de clave-valor, los cuales estarán dentro de comillas dobles
-                    (" "), y se encontrarán separados por dos puntos (:) como se lo indica a continuación:</p>
+                  <p>Los datos JSON se escriben como pares de clave-valor, los cuales estarán dentro de comillas dobles (" "), y se encontrarán separados por dos puntos (:) como se lo indica a continuación:</p>
                   <div class="docs-code-block">
                     <pre class="shadow-lg rounded"><code class="json hljs">{"nombre":"Jason"}</code></pre>
                   </div>
 
                   <br>
 
-                  <p>La sintaxis de JSON es muy parecida a la sintaxis de los objetos de JavaScript, solo que en el
-                    segundo caso, no son necesarias utilizar las comillas para declarar a las claves.</p>
+                  <p>La sintaxis de JSON es muy parecida a la sintaxis de los objetos de JavaScript, solo que en el segundo caso, no son necesarias utilizar las comillas para declarar a las claves.</p>
                   <div class="docs-code-block">
                     <pre class="shadow-lg rounded"><code class="JavaScript hljs">{nombre:"Jason"}</code></pre>
                   </div>
@@ -355,7 +343,7 @@
                   <br>
 
                 </div>
-              </div>
+              </div> 
               <div class="panel panel-primary" id="json3">
                 <div class="panel-heading">Valores en JSON</div>
                 <div class="panel-body">
@@ -374,8 +362,8 @@
                   <h4><b>Objetos en JSON.</b></h4>
                   <div class="docs-code-block">
                     <pre class="shadow-lg rounded"><code class="JavaScript hljs">{
-    "persona":{"nombre":"Jason", "edad":22, "pais":"Ecuador"}
-  }</code></pre>
+"persona":{"nombre":"Jason", "edad":22, "pais":"Ecuador"}
+}</code></pre>
                   </div>
 
                   <br>
@@ -404,8 +392,8 @@
                   <h4><b>Arreglos en JSON.</b></h4>
                   <div class="docs-code-block">
                     <pre class="shadow-lg rounded"><code class="JavaScript hljs">{
-    "estudiantes":["Jason", "Mario", "Peter"]
-  }</code></pre>
+"estudiantes":["Jason", "Mario", "Peter"]
+}</code></pre>
                   </div>
 
                   <br>
@@ -416,24 +404,19 @@
                   </div>
 
                 </div>
-              </div>
+              </div> 
               <div class="panel panel-primary" id="json4">
                 <div class="panel-heading">JSON.parse()</div>
                 <div class="panel-body">
-                  <p>Por lo general se utiliza JSON para intercambiar datos con un servidor web, los cuales al ser
-                    recibidos siempre están en forma de una cadena de texto.</p>
-                  <p>Es por esto que se puede utilizar la función <b>JSON.parse()</b>, la cual se caracteriza por
-                    analizar los datos y los convierten en un objeto JavaScript.</p>
+                  <p>Por lo general se utiliza JSON para intercambiar datos con un servidor web, los cuales al ser recibidos siempre están en forma de una cadena de texto.</p>
+                  <p>Es por esto que se puede utilizar la función <b>JSON.parse()</b>, la cual se caracteriza por analizar los datos y los convierten en un objeto JavaScript.</p>
 
                   <br>
 
-                  <p>Se puede convertir un texto con formato JSON en un objeto JavaScript con la función
-                    <b>JSON.parse()</b>, de la siguiente manera:
-                  </p>
+                  <p>Se puede convertir un texto con formato JSON en un objeto JavaScript con la función <b>JSON.parse()</b>, de la siguiente manera:</p>
 
                   <div class="docs-code-block">
-                    <pre
-                      class="shadow-lg rounded"><code class="JavaScript hljs">'{"nombre":"Jason", "edad":22, "pais":"Ecuador"}'</code></pre>
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">'{"nombre":"Jason", "edad":22, "pais":"Ecuador"}'</code></pre>
                   </div>
 
                   <br>
@@ -441,8 +424,7 @@
                   <p>Utilizando la función <b>JSON.parse()</b> para convertirlo en un objeto JavaScript, se tiene:</p>
 
                   <div class="docs-code-block">
-                    <pre
-                      class="shadow-lg rounded"><code class="JavaScript hljs">const persona = JSON.parse('{"nombre":"Jason", "edad":22, "pais":"Ecuador"}');</code></pre>
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const persona = JSON.parse('{"nombre":"Jason", "edad":22, "pais":"Ecuador"}');</code></pre>
                   </div>
 
                   <br>
@@ -451,10 +433,9 @@
 
                   <h4><b>Ejemplo (Convertir texto a objeto y extraer los valores de las claves):</b></h4>
                   <div class="docs-code-block">
-                    <pre
-                      class="shadow-lg rounded"><code class="JavaScript hljs">const textoJson1 = '{"nombre":"Jason", "edad":22, "pais":"Ecuador"}';
-  const persona1 = JSON.parse(textoJson1);
-  document.getElementById("demoJson1").innerHTML = persona1.nombre + " tiene la edad de: " + persona1.edad + " años.";</code></pre>
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const textoJson1 = '{"nombre":"Jason", "edad":22, "pais":"Ecuador"}';
+const persona1 = JSON.parse(textoJson1);
+document.getElementById("demoJson1").innerHTML = persona1.nombre + " tiene la edad de: " + persona1.edad + " años.";</code></pre>
                   </div>
 
                   <br>
@@ -464,34 +445,27 @@
                   <p id="demoJson1"></p>
 
                 </div>
-              </div>
+              </div> 
               <div class="panel panel-primary" id="json5">
                 <div class="panel-heading">JSON.stringify()</div>
                 <div class="panel-body">
-                  <p>Por lo general se utiliza JSON para intercambiar datos con un servidor web, los cuales al ser
-                    recibidos siempre están en forma de una cadena de texto.</p>
-                  <p>Es por esto que se puede utilizar la función <b>JSON.stringify()</b>, la cual se caracteriza por
-                    convertir un objeto JavaScript a un texto con formato JSON.</p>
+                  <p>Por lo general se utiliza JSON para intercambiar datos con un servidor web, los cuales al ser recibidos siempre están en forma de una cadena de texto.</p>
+                  <p>Es por esto que se puede utilizar la función <b>JSON.stringify()</b>, la cual se caracteriza por convertir un objeto JavaScript a un texto con formato JSON.</p>
 
                   <br>
 
-                  <p>Se puede convertir un objeto JavaScript a un texto con formato JSON con la función
-                    <b>JSON.stringify()</b>, de la siguiente manera:
-                  </p>
+                  <p>Se puede convertir un objeto JavaScript a un texto con formato JSON con la función <b>JSON.stringify()</b>, de la siguiente manera:</p>
 
                   <div class="docs-code-block">
-                    <pre
-                      class="shadow-lg rounded"><code class="JavaScript hljs">const persona = JSON.stringify('{"nombre":"Jason", "edad":22, "pais":"Ecuador"}');</code></pre>
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const persona = JSON.stringify('{"nombre":"Jason", "edad":22, "pais":"Ecuador"}');</code></pre>
                   </div>
 
                   <br>
 
-                  <p>Utilizando la función <b>JSON.stringify()</b> para convertirlo en un objeto JavaScript, se tiene:
-                  </p>
+                  <p>Utilizando la función <b>JSON.stringify()</b> para convertirlo en un objeto JavaScript, se tiene:</p>
 
                   <div class="docs-code-block">
-                    <pre
-                      class="shadow-lg rounded"><code class="JavaScript hljs">const objetoJSON = JSON.stringify(persona);</code></pre>
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const objetoJSON = JSON.stringify(persona);</code></pre>
                   </div>
 
                   <br>
@@ -501,43 +475,257 @@
                   <h4><b>Ejemplo (Convertir objeto a texto y escribir el texto):</b></h4>
                   <div class="docs-code-block">
                     <pre class="shadow-lg rounded"><code class="JavaScript hljs">const persona2 = {nombre:"Jason", edad:22, pais:"Ecuador"};
-  const textoJson2 = JSON.stringify(persona2);
-  document.getElementById("demoJson2").innerHTML = textoJson2;</code></pre>
+const textoJson2 = JSON.stringify(persona2);
+document.getElementById("demoJson2").innerHTML = textoJson2;</code></pre>
                   </div>
 
                   <br>
 
-                  <p>Objeto convertido a texto:</p>
+                  <p><b>Objeto convertido a texto:</b></p>
 
                   <p id="demoJson2"></p>
+              </div>              
+            </div>
+
+            <div class="panel panel-primary" id="json6">
+              <div class="panel-heading">Objetos Literales JSON</div>
+                <div class="panel-body">
+                  <p>Los objetos litarales JSON tienen la siguiente sintaxis:</p>
+                  
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="json hljs">{"nombre":"Jason", "edad":22, "carro":null}</code></pre>
+                  </div>
+
+                  <p>Donde los objetos literales se caracterizan por estar dentro de unas llaves "{ }", contienen pares clave-valor, los cuales se encuentran separados por dos puntos ":". </p>
+                  <br>
+
+                  <h4><b>OBJETOS JAVASCRIPT</b></h4>
+
+                  <p>A partir de los objetos literales JSON se pueden crear objetos JavaScript, como se lo tiene a continuación en el siguiente ejemplo: </p>
+
+                  <br>
+
+                  <h4><b>Ejemplo:</b></h4>
+
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const persona3 = {"nombre":"Mario", "edad":54, "auto":null};
+document.getElementById("demoJson3").innerHTML = persona3.nombre + " tiene " + persona3.edad + " años. ";</code></pre>
+                  </div>
+
+                  <p><b>Creación de un objeto desde un objeto literal JSON.</b></p>
+
+                  <p id="demoJson3"></p>
+
+                  <br>
+
+                  <h4><b>ACCESO A UN OBJETO JAVASCRIPT</b></h4>  
+
+                  <p>Se pueden acceder a loa valores de los objetos utilizando las siguientes sintaxis.</p>
+
+                  <br>
+
+                  <!-- EJEMPLO 1 -->
+
+                  <h4><b>Ejemplo 1:</b></h4>
+
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON4 = '{"nombre":"Mario", "edad":54, "auto":null}';
+const persona4 = JSON.parse(myJSON4);
+document.getElementById("demoJson4").innerHTML = persona4.nombre;</code></pre>
+                  </div>
+
+                  <p><b>Acceder a Objeto JavaScript (Forma 1)</b></p>
+
+                  <p id="demoJson4"></p>
+                  
+                  <br>
+
+                  <!-- EJEMPLO 2 -->
+
+                  <h4><b>Ejemplo 2:</b></h4>
+
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON5 = '{"nombre":"Mario", "edad":54, "auto":null}';
+const persona5 = JSON.parse(myJSON5);
+document.getElementById("demoJson5").innerHTML = persona5["nombre"];</code></pre>
+                  </div>
+
+                  <p><b>Acceder a Objeto JavaScript (Forma 2)</b></p>
+
+                  <p id="demoJson5"></p>
+            
+                  <br>
+
+                  <h4><b>BUCLE DE UN OBJETO</b></h4>
+
+                  <p>Con el bucle <b>"for-in"</b>, se puede acceder a las propiedades del objeto JavaScript, como se tiene a acontinuación: </p>
+
+                  <p><b>Recorrer Propiedades de un Objeto (Forma 1).</b></p>
+
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON6 = '{"nombre":"Mario", "edad":54, "auto":null}';
+const persona6 = JSON.parse(myJSON6);
+                      
+let texto = "";
+for (const x in persona6) {
+texto += x + ", ";
+}
+document.getElementById("demoJson6").innerHTML = texto;</code></pre>
+                  </div>
+
+                  <p id="demoJson6"></p>
+
+                  <br>
+
+                  <p><b>Recorrer Propiedades de un Objeto (Forma 2).</b></p>
+
+                  <div class="docs-code-block">
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON7 = '{"nombre":"Mario", "edad":54, "auto":null}';
+const persona7 = JSON.parse(myJSON7);
+                      
+let texto7 = "";
+for (const x in persona7) {
+texto7 += persona7[x] + ", ";
+}
+document.getElementById("demoJson7").innerHTML = texto7;</code></pre>
+                  </div>
+
+                  <p id="demoJson7"></p>
+
                 </div>
+          </div>
+
+          <div class="panel panel-primary" id="json7">
+            <div class="panel-heading">Arreglos Literales JSON</div>
+              <div class="panel-body">
+                <p>Los arreglos litarales JSON tienen la siguiente sintaxis:</p>
+                
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="json hljs">["Ford", "BMW", "Fiat"]</code></pre>
+                </div>
+
+                <p>Estos se caracterizan por tener valores de tipo cadena, número, objeto, matriz, booleano o nulo . </p>
+                <p>Además de que son muy parecidos a los arreglos de JavaScript.</p>
+
+                <br>
+
+                <h4><b>AREGLOS JAVASCRIPT</b></h4>
+
+                <p>A partir de un arreglo literal JSON se pueden crear una matriz de JavaScript, como se lo tiene a continuación en el siguiente ejemplo: </p>
+
+                <br>
+
+                <h4><b>Ejemplo:</b></h4>
+
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="JavaScript hljs">const arreglo1 = ["Ford", "BMW", "Fiat"];
+document.getElementById("demoJson8").innerHTML = arreglo1;</code></pre>
+                </div>
+
+                <p><b>Creación de un arreglo desde un arreglo literal JSON.</b></p>
+
+                <p id="demoJson8"></p>
+
+                <br>
+
+                <h4><b>ACCESO A LOS VALORES DEL ARREGLO.</b></h4>  
+
+                <p>Se pueden acceder a loa valores de los arreglos siguiendo el siguiente ejemplo:</p>
+
+                <br>
+
+                <!-- EJEMPLO 1 -->
+
+                <h4><b>Ejemplo:</b></h4>
+
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON9 = '["Ford", "BMW", "Fiat"]';
+const myArray = JSON.parse(myJSON9);
+document.getElementById("demoJson9").innerHTML = myArray[2];</code></pre>
+                </div>
+
+                <p><b>Acceder a un Valor de un Arreglo en JavaScript.</b></p>
+
+                <p id="demoJson9"></p>
+                
+                <br>
+
+                <h4><b>ARREGLOS EN OBJETOS</b></h4>
+
+                <p>Se puede acceder a los valores de una matriz en objetos mediante su índice, como se lo indica a continuación</p>
+
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON10 = '{"nombre":"Mario", "edad":54, "auto":["Ford", "BMW", "Fiat"]}';
+const objeto1 = JSON.parse(myJSON10);
+                    
+document.getElementById("demoJson10").innerHTML = objeto1.auto[1];</code></pre>
+                </div>
+
+                <p id="demoJson10"></p>
+
+                <br>
+
+                <h4><b>BUCLE EN UNA MATRIZ</b></h4>
+
+                <p>Con el bucle <b>"for-in"</b>, se puede acceder a los valores de la matriz en JavaScript, como se tiene a acontinuación: </p>
+
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON11 = '{"nombre":"Mario", "edad":54, "auto":["Ford", "BMW", "Fiat"]}';
+const objeto2 = JSON.parse(myJSON11);
+                    
+let text = "";
+for (let i in objeto2.auto) {
+text += objeto2.auto[i] + ", ";
+}
+                    
+document.getElementById("demoJson11").innerHTML = text;</code></pre>
+                </div>
+
+                <p id="demoJson11"></p>
+
+                <br>
+
+                <h4><b>Acceder a los valores de una matriz con bucle (Forma 2).</b></h4>
+
+                <div class="docs-code-block">
+                  <pre class="shadow-lg rounded"><code class="JavaScript hljs">const myJSON12 = '{"nombre":"Mario", "edad":54, "auto":["Ford", "BMW", "Fiat"]}';
+const objeto3 = JSON.parse(myJSON12);
+
+let text12 = "";
+
+for (let i = 0; i < objeto3.auto.length; i++) {
+text12 += objeto3.auto[i] + ", ";
+}
+
+document.getElementById("demoJson12").innerHTML = text12;</code></pre>
+                </div>
+
+                <p id="demoJson12"></p>
+
+
               </div>
-
-              <div class="panel panel-primary" id="json6">
-
-              </div>
-
-            </div>
-
-            <div class="col-md-3" id="menu">
-              <ul class="nav nav-pills nav-stacked">
-                <h4>Contenido Json</h4>
-                <li><a href="#json1">Introducción a Json</a></li>
-                <li><a href="#json2">Sintaxis de JSON</a></li>
-                <li><a href="#json3">Valores en JSON</a></li>
-                <li><a href="#json4">JSON.parse()</a></li>
-                <li><a href="#json5">JSON.stringify()</a></li>
-                <li><a href="#json6">Literales de Objetos JSON</a></li>
-                <li><a href="#json7">Literales de Arreglos JSON</a></li>
-
-
-              </ul>
-            </div>
+        </div>
 
           </div>
 
+          <div class="col-md-3" id="menu">
+            <ul class="nav nav-pills nav-stacked">
+              <h4 class="titulo-blanco">Contenido JSON</h4>
+              <li><a href="#json1">Introducción a JSON</a></li>
+              <li><a href="#json2">Sintaxis de JSON</a></li>
+              <li><a href="#json3">Valores en JSON</a></li>
+              <li><a href="#json4">JSON.parse()</a></li>
+              <li><a href="#json5">JSON.stringify()</a></li>
+              <li><a href="#json6">Objetos Literales JSON</a></li>
+              <li><a href="#json7">Arreglos Literales JSON</a></li>
+
+            </ul>                  
+          </div>
 
         </div>
+        
+
+      </div>
 
         <!--IVONNE-->
 

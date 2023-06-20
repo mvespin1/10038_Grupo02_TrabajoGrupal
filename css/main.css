@@ -141,3 +141,7 @@ a:hover,a:focus{
     .tab .nav-tabs li a{ color: #fff; }
     .tab .tab-content h3{ font-size: 18px; }
 }
+
+.titulo-blanco {
+    color: white;
+}
