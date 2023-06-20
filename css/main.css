@@ -65,7 +65,6 @@ a:hover,a:focus{
     text-decoration: none;
     outline: none;
 }
-.tab{ font-family: 'Baloo Tamma 2' }
 .tab .nav-tabs{
     background-color: transparent;
     border: none;
@@ -143,5 +142,19 @@ a:hover,a:focus{
 }
 
 .titulo-blanco {
+    color: #ff5858;
+}
+
+.texto-rosado{
     color: white;
+}
+
+.list-group-item.fondo1:hover {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.dropdown-toggle:hover{
+    background-color: white;
+    color: #444 !important;
 }
