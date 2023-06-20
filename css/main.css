@@ -65,7 +65,7 @@ a:hover,a:focus{
     text-decoration: none;
     outline: none;
 }
-.tab{ font-family: 'Baloo Tamma 2', cursive; }
+.tab{ font-family: 'Baloo Tamma 2' }
 .tab .nav-tabs{
     background-color: transparent;
     border: none;
