@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book1>
+    <title1>Libro 1</title1>
+    <author1>Autor 1</author1>
+    <price1>10.99</price1>
+  </book1>
+  <book1>
+    <title1>Libro 2</title1>
+    <author1>Autor 2</author1>
+    <price1>15.99</price1>
+  </book1>
+  <book1>
+    <title1>Libro 3</title1>
+    <author1>Autor 3</author1>
+    <price1>12.50</price1>
+  </book1>
+</library>
