@@ -43,10 +43,6 @@
     <h2>¿Qué es AJAX?</h2>
     <p>AJAX (Asynchronous JavaScript And XML) es una técnica de desarrollo web que permite realizar solicitudes asíncronas al servidor desde un navegador sin necesidad de recargar toda la página. Utiliza tecnologías como JavaScript y XML (aunque en la actualidad se utiliza más JSON) para enviar y recibir datos de forma dinámica.</p>
     <p>Con AJAX, es posible actualizar partes específicas de una página web sin interrumpir la experiencia del usuario, lo que mejora la capacidad de respuesta y la usabilidad de las aplicaciones web.</p>
-    <h2>Imágenes sobre AJAX</h2>
-    <div class="image-container">
-      <img src="../img/Diagrama_AJAX.png" alt="Imagen 1">
-    </div>
   </div>
 </body>
 </html>
