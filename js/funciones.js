@@ -14,9 +14,9 @@ function loadDoc() {
     xhttp.onload = function() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "../ejemploajaxhtml/ajax.txt", true);
+    xhttp.open("GET", "ajax.txt");
     xhttp.send();
-  }
+}
   
 //EJEMPLO 3
 const persona3 = {"nombre":"Mario", "edad":54, "auto":null};

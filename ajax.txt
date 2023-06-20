@@ -1,0 +1,9 @@
+AJAX (Asynchronous JavaScript and XML) es una técnica de desarrollo web utilizada para crear 
+aplicaciones interactivas. 
+Permite enviar y recibir datos del servidor en segundo plano, sin necesidad de recargar toda la página.
+
+-Componentes principales de AJAX:
+
+XMLHttpRequest: Objeto utilizado para realizar solicitudes HTTP asincrónicas. Permite enviar datos al servidor y recibir respuestas.
+Eventos: AJAX utiliza eventos para manejar la respuesta del servidor y realizar acciones en consecuencia, como actualizar la interfaz de usuario.
+Callbacks: Funciones que se ejecutan una vez que se recibe la respuesta del servidor. Se utilizan para procesar los datos y actualizar la interfaz de usuario.
