@@ -244,7 +244,7 @@ function CargarDatosxml() {
     }
   };
 
-  xhttpxml.open("GET", "./Libros1.xml", true);
+  xhttpxml.open("GET", "Libros1.xml", true);
   xhttpxml.send();
 }
 
