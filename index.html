@@ -16,9 +16,11 @@
   <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="./css/icomoon.css">
   <link rel="stylesheet" href="./css/main.css">
-
-
   <script src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      <!-- PARA LOS EJEMPLOS -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+      <!-- funciones -->
+      <script src="../js/funciones.js"></script>
 
 </head>
 
@@ -546,8 +548,8 @@
               <img src="./img/json.png" align="center" class="img-responsive"
                 style="width: 50%; height: 60%; display: block; margin-left: auto; margin-right: auto;">
               <br>
-              <div class="panel panel-primary" id="json1">
-                <div class="panel-heading">Introducción a JSON</div>
+              <div class="panel panel-primary" id="ajax1">
+                <div class="panel-heading">Introducción a AJAX</div>
                 <div class="panel-body">
                   <b>¿Qué es AJAX?</b> <br><br>
                   <p>Es un conjunto de técnicas de desarrollo web que permiten que las aplicaciones web funcionen de
@@ -563,7 +565,7 @@
                   </p>
                 </div>
               </div>
-              <div class="panel panel-primary" id="json2">
+              <div class="panel panel-primary" id="ajax2">
                 <div class="panel-heading">Como funciona AJAX</div>
                 <div class="panel-body">
                   <p>AJAX permite que las páginas web se actualicen de forma asíncrona mediante el intercambio de datos
@@ -572,7 +574,6 @@
                   </p> <br>
 
                   <center><img src="./img/ajafuncionamiento.png" alt="Como funcion AJA" class="img-responsive"></center> <br>
-                  <div class="container">
                     <div class="table-responsive">
                       <table class="table table-condensed">
                         <tbody>
@@ -599,69 +600,74 @@
                           </tr>
                         </tbody>
                       </table>                
-                    </div>
-                  </div>         
+                    </div>       
                 </div>
               </div> 
-              <div class="panel panel-primary" id="json3">
+              <div class="panel panel-primary" id="ajax3">
                 <div class="panel-heading">AJAX - The XMLHttpRequest Object</div>
                 <div class="panel-body">
                   <p>El objeto XMLHttpRequest se puede utilizar para intercambiar datos con un servidor web en segundo plano. 
                     Esto significa que es posible actualizar partes de una página web sin recargar toda la página.
                   </p> <br>
                   <ul>
-                    <li>Crear un objeto XMLHttpRequest</li>
-                    <li>Definir una función de devolución de llamada</li>
+                    <li><a href="#crear">Crear un objeto XMLHttpRequest</a></li>
+                    <li><a href="#definir">Definir una función de devolución de llamada</a></li>
                     <li>Abra el objeto XMLHttpRequest</li>
-                    <li>Enviar una solicitud a un servidor</li>
+                    <li><a href="#enviar">Enviar una solicitud a un servidor</a></li>
                   </ul>
                   <br>
-                  <h4><b>Crear un objeto XMLHttpRequest</b></h4>
+                  <h4 id="crear"><b>Crear un objeto XMLHttpRequest</b></h4>
                   <p>Todos los navegadores modernos (Chrome, Firefox, IE, Edge, Safari, Opera) tienen un objeto integrado <code>XMLHttpRequest</code>. <br>
                     <b>Sintaxis para crear un objeto <code>XMLHttpRequest</code> :</b> 
                   </p>
-                  <div class="docs-code-block">
+                  <div class="docs-code-block" >
                     <pre class="shadow-lg rounded"><code class="JavaScript hljs">variable = new XMLHttpRequest();}</code></pre>
                   </div>
 
                   <br>
 
-                  <h4><b>Valores Booleanos en JSON.</b></h4>
-                  <div class="docs-code-block">
-                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">{"sale":true}</code></pre>
+                  <h4 id="definir"><b>Definir una función de devolución de llamada</b></h4>
+                  <p>Una función de devolución de llamada es una función que se pasa como parámetro a otra función. <br>
+                    En este caso, la función de devolución de llamada debe contener el código para ejecutar cuando la respuesta esté lista.</p>
+                  <div class="docs-code-block" >
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">xhttp.onload = function() {
+                    // What to do when the response is ready
+                    }</code></pre>
                   </div>
 
                   <br>
 
-                  <h4><b>Valores String en JSON.</b></h4>
-                  <div class="docs-code-block">
-                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">{"nombre":"Jason"}</code></pre>
+                  <h4 id="enviar"><b>Enviar una solicitud</b></h4>
+                  <p>Para enviar una solicitud a un servidor, puede usar los métodos open() y send() del objeto <code>XMLHttpRequest</code>:</p>
+                  <div class="docs-code-block" >
+                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">xhttp.open("GET", "ajax_info.txt");
+                      xhttp.send();</code></pre>
                   </div>
 
-                  <br>
+                  <!--EJEMPLO XMLHttpRequest-->
+                  <div class="w3-container" id="modal">
+                    <button onclick="document.getElementById('id01').style.display='block';"
+                        class="w3-button w3-green w3-large">Ejecutar</button>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" id="modal1"
+                            style="max-width:600px">
+                            <br> <br>
 
-                  <h4><b>Valores Numéricos en JSON.</b></h4>
-                  <div class="docs-code-block">
-                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">{"edad":22}</code></pre>
-                  </div>
-
-                  <br>
-
-                  <h4><b>Arreglos en JSON.</b></h4>
-                  <div class="docs-code-block">
-                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">{
-  "estudiantes":["Jason", "Mario", "Peter"]
-}</code></pre>
-                  </div>
-
-                  <br>
-
-                  <h4><b>Valores nulos o "null" en JSON.</b></h4>
-                  <div class="docs-code-block">
-                    <pre class="shadow-lg rounded"><code class="JavaScript hljs">{"nombre":null}</code></pre>
-                  </div>
-
+                            <div id="cat-container">
+                              <p>Click the button to load a random cat image.</p>
+                              <button type="button" onclick="loadCatImage()">Get Cat Image</button>
+                            </div>
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                </div>
+
+
               </div>
               <div class="panel panel-primary" id="json4">
                 <div class="panel-heading">JSON.parse()</div>
@@ -768,9 +774,9 @@ document.getElementById("demoJson2").innerHTML = textoJson2;</code></pre>
             <div class="col-md-3" id="menu">
               <ul class="nav nav-pills nav-stacked">
                 <h4>Contenido Json</h4>
-                <li><a href="#json1">Introducción a Json</a></li>
-                <li><a href="#json2">Sintaxis de JSON</a></li>
-                <li><a href="#json3">Valores en JSON</a></li>
+                <li><a href="#ajax1">Introducción a AJAX</a></li>
+                <li><a href="#ajax2">Sintaxis de JSON</a></li>
+                <li><a href="#ajax3">Valores en JSON</a></li>
                 <li><a href="#json4">JSON.parse()</a></li>
                 <li><a href="#json5">JSON.stringify()</a></li>
                 <li><a href="#json6">Literales de Objetos JSON</a></li>
