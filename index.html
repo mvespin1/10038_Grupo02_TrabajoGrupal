@@ -257,11 +257,17 @@
 
                         Con unas pocas líneas de código JavaScript, puede leer un archivo XML y actualizar el contenido de datos de cualquier página HTML.</p><br>
                          <div id="codeEjecucion1"></div>
-                         <div>
-  <h2>Tabla de contenido</h2>
-  <button id="CargarDatosxml" class="btn btn-primary">Mostrar tabla</button>
-</div>
-<table id="demoxml"></table>
+                          <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody id="demoxml"></tbody>
+  </table>
+  <button type="bottom" onclick="CargarDatosxml()" class="btn btn-primary">Cargar datos XML</button>
                       </div>
                     </div> 
                     <div class="panel panel-primary" id="xml3">
