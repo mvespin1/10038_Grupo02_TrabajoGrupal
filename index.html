@@ -646,17 +646,18 @@
 
                   <!--EJEMPLO XMLHttpRequest-->
                   <div class="w3-container" id="modal">
-                    <button onclick="document.getElementById('id01').style.display='block';"
+                    <button onclick="document.getElementById('id01').style.display='block';loadDoc()"
                         class="w3-button w3-green w3-large">Ejecutar</button>
                     <div id="id01" class="w3-modal">
                         <div class="w3-modal-content w3-card-4 w3-animate-zoom" id="modal1"
                             style="max-width:600px">
                             <br> <br>
+                            <h1>The XMLHttpRequest Object</h1>
 
-                            <div id="cat-container">
-                              <p>Click the button to load a random cat image.</p>
-                              <button type="button" onclick="loadCatImage()">Get Cat Image</button>
-                            </div>
+                            <p id="demo">Let AJAX change this text.</p>
+                            
+                            <button type="button" onclick="loadDoc()">Change Content</button>
+                            
                             <div class="w3-center"><br>
                                 <span onclick="document.getElementById('id01').style.display='none'"
                                     class="w3-button w3-xlarge w3-hover-red w3-display-topright"

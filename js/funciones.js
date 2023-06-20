@@ -7,3 +7,14 @@ document.getElementById("demoJson1").innerHTML = persona1.nombre + " tiene la ed
 const persona2 = {nombre:"Jason", edad:22, pais:"Ecuador"};
 const textoJson2 = JSON.stringify(persona2);
 document.getElementById("demoJson2").innerHTML = textoJson2;
+
+//EJEMPLO XMLHttpRequest
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "../ejemploajaxhtml/ajax.txt", true);
+    xhttp.send();
+  }
+  
