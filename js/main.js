@@ -248,8 +248,8 @@ function CargarDatosxml() {
   xhttpxml.send();
 }
 
-function cargarXML(xml) {
-  var docXML = xml.responseXML;
+function cargarXML(xml1) {
+  var docXML = xml1.responseXML;
   var tablaxml = "<tr><th>Titulo</th><th>Autor</th><th>Precio</th></tr>";
   var mostrarxml = docXML.getElementsByTagName("book1");
 
